@@ -23,7 +23,18 @@
             android:textStyle="bold"
             android:textColor="#333333"
             android:layout_gravity="center"
-            android:layout_marginBottom="24dp" />
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/productNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="製品名を入力"
+            android:inputType="text"
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="16dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
