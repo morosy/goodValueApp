@@ -11,6 +11,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var upButton: Button
     private lateinit var downButton: Button
     private lateinit var confirmButton: Button
+    private lateinit var compareText: TextView
 
     private var counter = 1
 
@@ -28,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         upButton = findViewById(R.id.upButton)
         downButton = findViewById(R.id.downButton)
         confirmButton = findViewById(R.id.confirmButton)
+        compareText = findViewById(R.id.compareText)
     }
 
     private fun setupClickListeners() {
@@ -52,5 +54,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun updateCounter() {
         counterDisplay.text = String.format("%02d", counter)
+        compareText.text = "${counter}個の製品を比較"
     }
 }
